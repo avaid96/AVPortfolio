@@ -1,11 +1,13 @@
 #splash{
-	background-color: gray;
+	background:url("splash.jpg") no-repeat;
 	height: 400px;
 	width:100%;
 	text-align: center;
 	padding-top:150px; 
 	font-family: 'Stint Ultra Expanded', cursive;
 	font-size: 50px;
+	color:black;
+	text-decoration: underline;
 }
 body{
 	margin: 0px;
