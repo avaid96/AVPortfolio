@@ -13,4 +13,30 @@
 }
 body{
 	margin: 0px;
+	height: 4000px;
+}
+#navbar {
+	border: 0;
+	background-color: white;
+	margin-bottom: 0;
+    height: 30px;
+    margin-top: 10px;
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+} /*for scroll*/
+.navelements{
+    margin: 0;
+}
+.navelements li {
+	display: inline-block;
+    margin:0px;
+    width: 19.5%;
+    text-align: center;
+}
+hr{
+	width: 85%;
 }
