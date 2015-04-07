@@ -1,5 +1,7 @@
 #splash{
-	background:url("splash.jpg") no-repeat;
+	background:url("splash.jpg") no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size:cover;
 	height: 400px;
 	width:100%;
 	text-align: center;
