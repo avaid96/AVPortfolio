@@ -2,7 +2,7 @@
 	background:url("splash.jpg") no-repeat center center fixed;
 	background-size: cover;
 	-webkit-background-size:cover;
-	height: 400px;
+	height: 430px;
 	width:100%;
 	text-align: center;
 	padding-top:150px; 
@@ -25,8 +25,9 @@ body{
 .navbar-fixed {
     top: 0;
     z-index: 100;
-  position: fixed;
+  	position: fixed;
     width: 100%;
+    background-color: white;
 } /*for scroll*/
 .navelements{
     margin: 0;
@@ -37,6 +38,36 @@ body{
     width: 19.5%;
     text-align: center;
 }
+#rightborder{
+	border-right-style: solid;
+}
 hr{
 	width: 85%;
+}
+/*slides*/
+#about{
+	height: 430px;
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+#portfolio{
+	height: 430px;
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+#contact{
+	height: 430px;
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+#buttons{
+	height: 100px;
+	background-color: blue;
+}
+a:link{
+	text-decoration: none;
+	color: black;
 }

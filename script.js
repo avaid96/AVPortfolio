@@ -4,9 +4,6 @@
 $(document).ready(function() {
   
   $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the 
-      //nav bar to stick.  
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 550) {
       $('#navbar').addClass('navbar-fixed');
@@ -15,4 +12,13 @@ $(document).ready(function() {
       $('#navbar').removeClass('navbar-fixed');
     }
   });
+});
+
+$(document).ready(function() {
+  $('a[rel="relativeanchor"]').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
+  }); 
 });
