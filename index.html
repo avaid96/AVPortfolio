@@ -15,8 +15,69 @@
 		<title>Avi Vaid</title>
 		<link rel="stylesheet" type="text/css" href="style.css"> 
 		<link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded' rel='stylesheet' type='text/css'> <!-- avi vaid font -->
+		<link href='http://fonts.googleapis.com/css?family=Laila:700' rel='stylesheet' type='text/css'><!--title font-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type="text/javascript" src="script.js"></script><!-- scroll -->
+		<!-- data visualization pie chart -->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    	<script type="text/javascript">
+      	google.load("visualization", "1", {packages:["corechart"]});
+     	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Skill','Progress'],
+          ['HTML',     10],
+          ['CSS',      10],
+          ['Javascript',  10],
+          ['JQuery', 10],
+          ['Java',    10],
+          ['C++',    10],
+          ['CSharp',    10],
+          ['Python',    10],
+          ['Github',10],
+          ['SEO',10]
+        ]);
+
+        var options = {
+          pieHole: 0.5,
+          legend:{position:'none'},
+          backgroundColor: { fill:'transparent' },
+          pieSliceText:'none',
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+        chart.draw(data, options);
+      	}
+    	</script>
+
+    	<!-- data visualization pie chart -->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    	<script type="text/javascript">
+      	google.load("visualization", "1", {packages:["corechart"]});
+     	google.setOnLoadCallback(drawChart);
+      	function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Skill','Progress'],
+          ['Equity markets',20],
+          ['Bond markets',20],
+          ['Economics of finance',20],
+          ['Options markets',20],
+          ['Commodities markets',20]
+        ]);
+
+        var options = {
+          pieHole: 0.5,
+          legend:{position:'none'},
+          backgroundColor: { fill:'transparent' },
+          pieSliceText:'none',
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+        chart.draw(data, options);
+      	}
+    	</script>
 </head>
 
 <body>
@@ -25,25 +86,34 @@
 	</div>
 	<nav id="navbar">
 	<ul class="navelements">
-		<a href="#about" rel="relativeanchor"><li id="rightborder">about</li></a>
-		<a href="#portfolio" rel="relativeanchor"><li id="rightborder">portfolio</li></a>
-		<li id="rightborder">AV</li>
-		<a href="#contact" rel="relativeanchor"><li id="rightborder">contact</li></a>
+		<a href="#about" rel="scroller"><li id="rightborder">about</li></a>
+		<a href="#portfolio" rel="scroller"><li id="rightborder">portfolio</li></a>
+		<a href="#splash" rel="scroller"><li id="rightborder">AV</li></a>
+		<a href="#contact" rel="scroller"><li id="rightborder">contact</li></a>
 		<a href="cv.pdf" target="_blank"><li>CV</li></a>
 	</ul>
 	<hr>
 	</nav>
 	<div id="about">
-		<p>about me</p>
+		<p><span style="font-family: 'Laila', serif; font-size:25px;">about me</span></p>
+		<p id="description">Avi is a first year student at Northwestern University. He is pursuing an Economics major with a minor in Computer Science and Mathematics. He is part of the MENU math program and intends to pursue the Kellogg certificate in Financial Economics. He is involved in multiple clubs at Northwestern (some of which are, ISBE, UES Rotaract and Club Tennis) and works part-time as an associate consultant at Northwestern Technological Services. As a high-schooler, he has tried floating 3 start-ups in a vocational job search engine, a code learning website and an organization to teach vocationally trained students communication skills.<p>
+		<table id="mytable">
+  		<tr>
+    	<td class="cell"><p><span style="font-family: 'Laila', serif;">Avi loves <span style="color:red">code</span></span></p>
+		<div id="donutchart1"></div></td>
+		<td class="cell"><p><span style="font-family: 'Laila', serif;">Avi loves <span style="color:red">finance</span></span></p>
+		<div id="donutchart2"></div></td>
+		</tr>
+		</table>
 	</div>
 	<div id="portfolio">
-		<p>my portfolio</p>
+		<p><span style="font-family: 'Laila', serif;">my portfolio</span></p>
 	</div>
 	<div id="contact">
-		<p>contact me</p>
+		<p><span style="font-family: 'Laila', serif;">contact me</span></p>
 	</div>
 	<div id="buttons">
-		<p>buttons</p>
+		<p><span style="font-family: 'Laila', serif;">buttons</span></p>
 	</div>
 
 </body>

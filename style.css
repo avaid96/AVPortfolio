@@ -1,5 +1,5 @@
 #splash{
-	background:url("splash.jpg") no-repeat center center fixed;
+	background:url("pictures/splash.jpg") no-repeat center center fixed;
 	background-size: cover;
 	-webkit-background-size:cover;
 	height: 430px;
@@ -10,6 +10,7 @@
 	font-size: 50px;
 	color:black;
 	text-decoration: underline;
+	margin-bottom: 15px;
 }
 body{
 	margin: 0px;
@@ -20,7 +21,8 @@ body{
 	background-color: white;
 	margin-bottom: 0;
     height: 30px;
-    margin-top: 10px;
+    
+
 }
 .navbar-fixed {
     top: 0;
@@ -46,22 +48,53 @@ hr{
 }
 /*slides*/
 #about{
-	height: 430px;
+	background:url("pictures/about.jpg") no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size:cover;
+	height: 500px;
 	background-color: black;
 	width: 100%;
 	color: white;
+	padding-top: 40px;
+	padding-left: 1%;
+}
+#description{
+	width: 70%;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-left: 1%;
+}
+#table{
+	width: 70%;
+}
+.cell{
+	text-align: center;
+}
+#donutchart1{
+	width: 250px;
+	height: 250px;
+	background-color: none;
+}
+#donutchart2{
+	width: 250px;
+	height: 250px;
+	background-color: none;
 }
 #portfolio{
 	height: 430px;
 	background-color: black;
 	width: 100%;
 	color: white;
+	padding-top: 40px;
+	padding-left: 1%;
 }
 #contact{
 	height: 430px;
 	background-color: black;
 	width: 100%;
 	color: white;
+	padding-top: 40px;
+	padding-left: 1%;
 }
 #buttons{
 	height: 100px;
