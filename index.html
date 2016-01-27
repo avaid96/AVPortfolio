@@ -16,68 +16,8 @@ testing commit contributions
 		<link rel="stylesheet" type="text/css" href="style.css"> 
 		<link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded' rel='stylesheet' type='text/css'> <!-- avi vaid font -->
 		<link href='http://fonts.googleapis.com/css?family=Laila:700' rel='stylesheet' type='text/css'><!--title font-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><!-- jquery -->
 		<script type="text/javascript" src="script.js"></script><!-- scroll -->
-		<!-- data visualization pie chart -->
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    	<script type="text/javascript">
-      	google.load("visualization", "1", {packages:["corechart"]});
-     	google.setOnLoadCallback(drawChart);
-      	function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Skill','Progress'],
-          ['HTML',     10],
-          ['CSS',      10],
-          ['Javascript',  10],
-          ['JQuery', 10],
-          ['Java',    10],
-          ['C++',    10],
-          ['CSharp',    10],
-          ['Python',    10],
-          ['Github',10],
-          ['SEO',10]
-        ]);
-
-        var options = {
-          pieHole: 0.5,
-          legend:{position:'none'},
-          backgroundColor: { fill:'transparent' },
-          pieSliceText:'none',
-
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
-        chart.draw(data, options);
-      	}
-    	</script>
-
-    	<!-- data visualization pie chart -->
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    	<script type="text/javascript">
-      	google.load("visualization", "1", {packages:["corechart"]});
-     	google.setOnLoadCallback(drawChart);
-      	function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Skill','Progress'],
-          ['Equity markets',20],
-          ['Bond markets',20],
-          ['Economics of finance',20],
-          ['Options markets',20],
-          ['Commodities markets',20]
-        ]);
-
-        var options = {
-          pieHole: 0.5,
-          legend:{position:'none'},
-          backgroundColor: { fill:'transparent' },
-          pieSliceText:'none',
-
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
-        chart.draw(data, options);
-      	}
-    	</script>
 </head>
 
 <body>
